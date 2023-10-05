@@ -48,6 +48,7 @@ codespace_test
     `touch Makefile`
 
     **Makefile template:**
+
     print:
 
         echo "working"
@@ -71,7 +72,7 @@ codespace_test
 
     all: install lint format test 
 
-12. add * Python * to .gitignore
+13. add * Python * to .gitignore
 
     `git status`
 
