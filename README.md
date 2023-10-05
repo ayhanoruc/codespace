@@ -23,20 +23,28 @@ codespace_test
     `/home/codespace/Python-<version>/<python_executable_location>` mine is: /workspaces/codespace/Python-3.11.5/python 
 
 9. `vim ~/.bashrc` # to add a python alias
+
    `alias python="/workspaces/codespace/Python-3.11.5/python"` # add this to the bottom of the file.
+
    `source ~/.bashrc` # update current shell session 
+   
    `python` #now this should execute the python version we want
 
 10. `python -m venv ~/.venv` 
+
     `vim ~/.bashrc`
+
     `source ~/.venv/bin/activate` # add this to the bottom of the file.
+
     `source ~/.bashrc`
+
     `which python` #this should return the latest python in .venv, now all the shells can run the python version we want, by default.
 
     The series of commands provided above are used to create and activate a Python virtual environment (venv) and ensure that the selected Python version within the virtual environment becomes the default
 
 11. Create template for projects
     `touch requirements.txt`
+
     `touch Makefile`
 
     **Makefile template:**
@@ -63,7 +71,12 @@ codespace_test
 
     all: install lint format test 
 
-12. `git status`
+12. add * Python * to .gitignore
+
+    `git status`
+
     `git add .`
+
     `git commit -m "project template created"`
+
     `git push -u origin main`
